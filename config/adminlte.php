@@ -424,7 +424,7 @@ return [
                 [
                     'type' => 'css',
                     'asset' => false,
-                    'location' => '/css/fill-left.css',
+                    'location' => '/css/corner-indicator.css',
                 ],
                 [
                     'type' => 'js',
