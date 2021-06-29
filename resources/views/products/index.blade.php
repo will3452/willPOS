@@ -43,6 +43,12 @@
                         </div>
                         <div class="form-group">
                             <label for="">
+                                Code
+                            </label>
+                            <input type="text" name="code" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
                                 Image
                             </label>
                             <x-adminlte-input-file name="image"/>

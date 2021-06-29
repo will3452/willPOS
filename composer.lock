@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "02117b17e2fb28a5a70abd22c3dd41c7",
+    "content-hash": "e93650ca389cb18073a64e7005807d0e",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -898,53 +898,6 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.8.2"
             },
             "time": "2021-04-26T09:17:50+00:00"
-        },
-        {
-            "name": "haruncpi/laravel-id-generator",
-            "version": "v1.0.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/haruncpi/laravel-id-generator.git",
-                "reference": "70a702b8941fe7056d2650de9fb5aa1abbc4e102"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/haruncpi/laravel-id-generator/zipball/70a702b8941fe7056d2650de9fb5aa1abbc4e102",
-                "reference": "70a702b8941fe7056d2650de9fb5aa1abbc4e102",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Haruncpi\\LaravelIdGenerator\\IdGeneratorServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Haruncpi\\LaravelIdGenerator\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "cc-by-4.0"
-            ],
-            "authors": [
-                {
-                    "name": "Md.Harun-Ur-Rashid",
-                    "email": "harun.cox@gmail.com"
-                }
-            ],
-            "description": "Easy way to generate custom ID in laravel framework",
-            "support": {
-                "issues": "https://github.com/haruncpi/laravel-id-generator/issues",
-                "source": "https://github.com/haruncpi/laravel-id-generator/tree/v1.0.9"
-            },
-            "time": "2021-06-04T04:11:07+00:00"
         },
         {
             "name": "jeroennoten/laravel-adminlte",

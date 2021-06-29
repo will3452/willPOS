@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -12,21 +13,31 @@ class ProductController extends Controller
     }
 
     public function store(Request $request){
+
         $data = $request->validate([
             'name'=>'required',
             'amount'=>'required',
             'image'=>'',
-            'qty'=>'required'
+            'qty'=>'required',
+            'code'=>''
         ]);
-        // $data['code'] = $id = IdGenerator::generate(['table' => 'products', 'length' => 7, 'prefix' =>'P-']);
-        if($data['image']){
+        
+        if($request->has('image')){
             $data['image'] = $data['image']->store('/public/product');
         }else {
             unset($data['image']);
         }
 
         toast('Product was added!', 'success');
-        auth()->user()->products()->create($data);
+        $p = auth()->user()->products()->create($data);
+
+        if($request->code != null){
+            $p->code = $request->code;
+        }else {
+            $p->code = 'P-'.Str::padLeft($p->id, 6,'0');
+        }
+        $p->save();
+
         return back();
         
     }
